@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BOM Challenge</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 2rem;
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: lightgrey;
+        padding: 1rem;
+        border-radius: 7px;
+      }
+      input {
+        width: 30rem;
+        height: 3.5rem;
+        border: none;
+        margin-right: 1rem;
+        background-color: white;
+        border-radius: 7px;
+        font-size: 1.2rem;
+        font-family: "Century Gothic", sans-serif;
+      }
+      input:focus,
+      input:active {
+        outline: none;
+      }
+      button {
+        background-color: orangered;
+        font-family: "Asmaa Font",sans-serif;
+        border: none;
+        color: white;
+        height: 3.5rem;
+        width: 9rem;
+        border-radius: 7px;
+        font-size: 1.3rem;
+        //font-weight: 600;
+        cursor: pointer;
+      }
+      .tasks {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+        height: auto;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <input
+          type="text"
+          class="input"
+          placeholder="entre your task here ..."
+        />
+        <button class="add" type="submit">Add Task</button>
+      </div>
+      <div class="tasks"></div>
+    </div>
+    <script src="challenges.js"></script>
+  </body>
+</html>

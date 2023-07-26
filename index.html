@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+      body {
+        height: 200rem;
+      }
+      button {
+        background-color: blueviolet;
+        border: transparent;
+        border-radius: 50px;
+        color: white;
+        padding: 2rem;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+        transition-duration: 1s;
+      }
+    </style> -->
+    <style>
+      body {
+        background-color: white;
+      }
+      ul {
+        background-color: white;
+        margin: 20px auto;
+        padding: 20px;
+        width: 400px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li {
+        width: 60px;
+        height: 60px;
+        border: 2px solid transparent;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: 1s;
+        border-radius: 10px;
+      }
+      ul li:active,
+      ul li:hover {
+        opacity: 1;
+      }
+      ul li:first-child {
+        background-color: red;
+      }
+      ul li:nth-child(2) {
+        background-color: green;
+      }
+      ul li:nth-child(3) {
+        background-color: yellow;
+      }
+      ul li:nth-child(4) {
+        background-color: pink;
+      }
+      .experiment {
+        background-color: red;
+        width: 600px;
+        height: 300px;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button>Go up</button>
+    <div>5</div> -->
+    <!-- <form action="" method="post" id="form">
+      <label for="name">name</label>
+      <input type="text" name="name" id="name" />
+      <br />
+      <br />
+      <label for="age">age</label>
+      <input type="text" name="age" id="age" />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+    <a href="https://www.google.com">Google</a> -->
+
+    <ul>
+      <li class="active" data-color="red"></li>
+      <li data-color="green"></li>
+      <li data-color="yellow"></li>
+      <li data-color="pink"></li>
+    </ul>
+    <div class="experiment"></div>
+    <script src="localStorage.js"></script>
+  </body>
+</html>
